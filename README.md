@@ -28,7 +28,7 @@ Required Elements (with exact data-testid attributes)
 
 Technical Requirements
 
-✅ Semantic HTML5 (<article>, <header>, <nav>, <section>, <figure>)
+✅ Semantic HTML5 ("<article>", "<header>", "<nav>", "<section>", "<figure>")
 ✅ Keyboard accessible with visible focus states
 ✅ Responsive design (mobile-first approach)
 ✅ Modern CSS (Flexbox & Grid)
@@ -47,10 +47,10 @@ No build tools or dependencies required!
 
 Running Locally
 
-   # Clone the repository
+   # Clone the repository\n
 
    bash   git clone https://github.com/zod-codes/HNG_track_0_profileCard.git
-   cd hng-profile-card
+   cd     hng-profile-card
 
 
 Open the file:
@@ -66,7 +66,7 @@ Using Python:
    
    # Python 2
    python -m SimpleHTTPServer 8000
-Then visit http://localhost:8000
+   Then visit http://localhost:8000
 
 
 Using Node.js (with npx):
@@ -83,39 +83,18 @@ Using VS Code:
    Right-click index.html → "Open with Live Server"
 
 
-🎨 Customization
-Update Your Information
-
-Personal Details (Lines 350-365)
-
-html   <h1>Your Name</h1>
-   <p class="bio">Your bio here...</p>
-
-Avatar Image (Line 343)
-
-html   <img src="your-image-url.jpg" alt="Your name and description">
-
-Social Links (Lines 381-415)
-
-html   <a href="https://github.com/yourusername">GitHub</a>
-
-Hobbies & Dislikes (Lines 420-448)
-
-html   <li>Your hobby here</li>
-
-Color Scheme
+# Color Scheme
 
 Main colors used:
+Primary Purple: #7877c6;
+Light Purple: #a3a3ff;
+Coral Orange: #ff8a65;
+Sky Blue: #63b3ed;
+Dark Background: #0a0a0a;
+Card Background: rgba(20, 20, 30, 0.7);
 
-Primary Purple: #7877c6
-Light Purple: #a3a3ff
-Coral Orange: #ff8a65
-Sky Blue: #63b3ed
-Dark Background: #0a0a0a
-Card Background: rgba(20, 20, 30, 0.7)
 
-
-♿ Accessibility Features
+# ♿ Accessibility Features
 
 Semantic HTML - Proper use of landmarks and heading hierarchy
 ARIA Labels - Descriptive labels for screen readers
@@ -128,7 +107,7 @@ Motion Preferences - Respects prefers-reduced-motion
 High Contrast Mode - Support for high contrast display settings
 
 
-🧪 Testing
+# 🧪 Testing
 Manual Testing Checklist
 
  All data-testid attributes present and correct
@@ -144,7 +123,8 @@ Manual Testing Checklist
  Skip link appears on Tab press
  Screen reader announces all content correctly
 
-Browser Testing
+
+# Browser Testing
 Tested and working on:
 
 ✅ Chrome/Edge (latest)
@@ -157,7 +137,8 @@ Tested and working on:
 Mobile: width <= 767px - Stacked layout
 Desktop: width >= 768px - Side-by-side layout
 
-🛠️ Technologies Used
+
+# 🛠️ Technologies Used
 
 HTML5 - Semantic markup
 CSS3 - Modern styling with Flexbox, Grid, and animations
