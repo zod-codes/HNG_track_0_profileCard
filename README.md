@@ -47,15 +47,17 @@ No build tools or dependencies required!
 
 Running Locally
 
-Clone the repository
+   # Clone the repository
 
-bash   git clone https://github.com/yourusername/hng-profile-card.git
+   bash   git clone https://github.com/zod-codes/HNG_track_0_profileCard.git
    cd hng-profile-card
 
-Open the file
+
+Open the file:
 
 Simply open index.html in your browser
 Or use a local server:
+
 
 Using Python:
 
@@ -66,10 +68,12 @@ Using Python:
    python -m SimpleHTTPServer 8000
 Then visit http://localhost:8000
 
+
 Using Node.js (with npx):
 
    # Node.js
    npx serve
+
    
 Using VS Code:
 
@@ -77,6 +81,7 @@ Using VS Code:
 
    Install "Live Server" extension
    Right-click index.html → "Open with Live Server"
+
 
 🎨 Customization
 Update Your Information
@@ -97,7 +102,9 @@ html   <a href="https://github.com/yourusername">GitHub</a>
 Hobbies & Dislikes (Lines 420-448)
 
 html   <li>Your hobby here</li>
+
 Color Scheme
+
 Main colors used:
 
 Primary Purple: #7877c6
@@ -106,6 +113,7 @@ Coral Orange: #ff8a65
 Sky Blue: #63b3ed
 Dark Background: #0a0a0a
 Card Background: rgba(20, 20, 30, 0.7)
+
 
 ♿ Accessibility Features
 
@@ -118,6 +126,7 @@ Alt Text - Descriptive alternative text for images
 Color Contrast - WCAG AA compliant contrast ratios
 Motion Preferences - Respects prefers-reduced-motion
 High Contrast Mode - Support for high contrast display settings
+
 
 🧪 Testing
 Manual Testing Checklist
