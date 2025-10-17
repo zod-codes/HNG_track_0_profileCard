@@ -59,18 +59,24 @@ Or use a local server:
 
 Using Python:
 
-bash   # Python 3
+   # Python 3
    python -m http.server 8000
    
    # Python 2
    python -m SimpleHTTPServer 8000
 Then visit http://localhost:8000
+
 Using Node.js (with npx):
-bash   npx serve
+
+   # Node.js
+   npx serve
+   
 Using VS Code:
 
-Install "Live Server" extension
-Right-click index.html → "Open with Live Server"
+   # VS Code
+
+   Install "Live Server" extension
+   Right-click index.html → "Open with Live Server"
 
 🎨 Customization
 Update Your Information
