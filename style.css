@@ -400,6 +400,7 @@ section ul li:hover {
     }
 
     figure {
+        width: 30%;
         aspect-ratio: 1;
         & img {
             aspect-ratio: inherit;
