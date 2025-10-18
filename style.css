@@ -364,6 +364,32 @@ section ul li:hover {
     border-left-color: #ffb199;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #7877c6, #ff8a65);
+    border-radius: 6px;
+    border: 2px solid #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #a3a3ff, #ffb199);
+}
+
+/* Firefox Scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #7877c6 #0a0a0a;
+}
+
 /* Responsive */
 @media (width >= 768px) {
 
@@ -400,9 +426,10 @@ section ul li:hover {
     }
 
     figure {
-        width: 30%;
+        width: 60%;
         aspect-ratio: 1;
         & img {
+            width: 100%;
             aspect-ratio: inherit;
         }
     }
