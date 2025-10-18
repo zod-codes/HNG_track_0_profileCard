@@ -37,7 +37,7 @@ Technical Requirements
 ✅ Proper alt text for images
 
 🚀 Live Demo
-Live Site: [Your Deployment URL Here]
+Live Site: https://zod-codes.github.io/HNG_track_0_profileCard/
 
 📦 Installation & Local Development
 Prerequisites
