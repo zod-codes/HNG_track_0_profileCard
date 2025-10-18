@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card - HNG Stage 0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <article data-testid="test-profile-card" role="article" aria-labelledby="profile-heading">
+        <div class="card-content" id="main-content">
+            <div class="avatar-section">
+                <figure role="img" aria-label="Profile photo">
+                    <img src="/assets/images/ZOD.JPG" alt="Profile picture of Z.O.D, a smiling person with short dark hair" data-testid="test-user-avatar">
+                </figure>
+
+                <div class="header-content">
+                    <header>
+                        <h1 id="profile-heading" data-testid="test-user-name">Z.O.D</h1>
+                    </header>
+                    <p class="bio" data-testid="test-user-bio">
+                        Full-stack developer passionate about building accessible web applications.
+                        Currently learning SIEM tools and exploring the world of Data Analytics.
+                        HNG Intern on a mission to level up!
+                    </p>
+                </div>
+            </div>
+
+            <div class="timestamp-wrapper">
+                <div class="timestamp" role="status" aria-live="polite" aria-atomic="true" tabindex="0">
+                    <strong>Current Time:</strong>
+                    <span data-testid="test-user-time" id="timestamp" aria-label="Current time in milliseconds"></span>
+                    <span class="sr-only">milliseconds since epoch</span>
+                    <span aria-hidden="true">ms</span>
+                </div>
+                <div class="tooltip" role="tooltip" id="timestamp-tooltip">
+                    <div class="tooltip-label">ISO Local Time</div>
+                    <div class="tooltip-value" id="iso-time"></div>
+                </div>
+            </div>
+
+            <nav aria-label="Social media links">
+                <h2>Connect With Me</h2>
+                <ul data-testid="test-user-social-links">
+                    <li>
+                        <a href="https://github.com/zod-codes" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github" aria-label="Visit John Doe's GitHub profile (opens in new tab)">
+                            <span aria-hidden="true">→</span>
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/Azemaza1" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" aria-label="Visit John Doe's Twitter profile (opens in new tab)">
+                            <span aria-hidden="true">→</span>
+                            <span>Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/azemaza-otaru-417288251/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin" aria-label="Visit John Doe's LinkedIn profile (opens in new tab)">
+                            <span aria-hidden="true">→</span>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="info-grid">
+                <section class="hobbies-section" aria-labelledby="hobbies-heading">
+                    <h2 id="hobbies-heading">
+                        <span class="emoji-icon" aria-hidden="true">💚</span>
+                        <span>Hobbies & Interests</span>
+                    </h2>
+                    <ul data-testid="test-user-hobbies">
+                        <li><span aria-hidden="true">🎮</span> Gaming - RPGs & Adventure</li>
+                        <li><span aria-hidden="true">📚</span> Reading tech blogs and watching tech Youtube videos</li>
+                        <li><span aria-hidden="true">🏃</span> Running marathons</li>
+                        <li><span aria-hidden="true">🎵</span> Playing guitar</li>
+                        <li><span aria-hidden="true">🍳</span> Cooking new recipes</li>
+                    </ul>
+                </section>
+
+                <section class="dislikes-section" aria-labelledby="dislikes-heading">
+                    <h2 id="dislikes-heading">
+                        <span class="emoji-icon" aria-hidden="true">💔</span>
+                        <span>Not A Fan Of</span>
+                    </h2>
+                    <ul data-testid="test-user-dislikes">
+                        <li><span aria-hidden="true">🐛</span> Unhandled exceptions</li>
+                        <li><span aria-hidden="true">🌧️</span> Rainy Monday mornings</li>
+                        <li><span aria-hidden="true">🥩</span> Undercooked meat</li>
+                        <li><span aria-hidden="true">⏰</span> Meetings without agendas</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+
+    <script>
+        function updateTimestamp() {
+            const now = Date.now();
+            const isoTime = new Date(now).toLocaleString('en-US', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            });
+
+            document.getElementById('timestamp').textContent = now;
+            document.getElementById('iso-time').textContent = isoTime;
+        };
+
+        // Initial update
+        updateTimestamp();
+
+        // Update every second
+        setInterval(updateTimestamp, 1);
+    </script>
+</body>
+
+</html>
